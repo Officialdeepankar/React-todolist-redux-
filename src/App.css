@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Style for input with class 'input' */
+.input {
+  width: 300px; /* Set the width of the input field */
+  padding: 10px; /* Add padding to the input field */
+  margin: 10px 0; /* Add margin to create space around the input field */
+  font-size: 16px; /* Set the font size of the text inside the input field */
+  border: 1px solid #ccc; /* Add a border with a light gray color */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  outline: none; /* Remove the default outline style */
+}
+
+/* Style for when the input field is in focus */
+.input:focus {
+  border-color: #007bff; /* Change the border color when the input is in focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle box shadow when the input is in focus */
+}
+
+
+.btn{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db; /* Blue color */
+  color: #ffffff; /* White text color */
+  transition: background-color 0.3s ease;
+}
+/* Style for delete button with class 'btn-delete' */
+.btn-delete {
+  background-color: #dc3545; /* Set the background color to red or any desired color */
+  color: #fff; /* Set the text color to white or any desired color */
+  padding: 10px 15px; /* Add padding to the button */
+  font-size: 14px; /* Set the font size of the text inside the button */
+  border: none; /* Remove the default button border */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  cursor: pointer; /* Change the cursor to a pointer on hover for better user feedback */
+  transition: background-color 0.3s ease; /* Add a smooth transition for background color change */
+
+  /* Optional: Add more styles for button hover and focus states */
+}
+
+/* Style for button hover state */
+.btn-delete:hover {
+  background-color: #c82333; /* Darken the background color on hover */
+}
+
+/* Style for button focus state */
+.btn-delete:focus {
+  outline: none; /* Remove the default focus outline */
+  box-shadow: 0 0 5px rgba(220, 53, 69, 0.5); /* Add a subtle box shadow when the button is in focus */
+}
+
+
+/* Style for .to-do-text with glass background */
+.to-do-text {
+  position: relative;
+  background: rgba(0, 123, 255, 0.5); /* Use rgba to set a blue color with some transparency */
+  padding: 15px;
+  border-radius: 8px;
+
+  margin: 10px 0;
+  color:white;
+  border: 2px solid;
+   /* Set text color to white for better visibility on blue background */
+}
+
+/* Create a pseudo-element for the glass effect */
+.to-do-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit; /* Inherit the background color from the parent */
+  opacity: 0.2; /* Set the opacity for the glass effect */
+  z-index: -1; /* Move the pseudo-element behind the content */
+  border-radius: inherit; /* Inherit border-radius from the parent */
+}
+
+.text-wrapper{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.data{
+
+  background:white;
+  color:black;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
